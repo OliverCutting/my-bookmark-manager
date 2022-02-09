@@ -7,8 +7,15 @@ class BookmarkManager < Sinatra::Base
     register Sinatra::Reloader 
   end
 
+  enable :sessions, :method_override
+  
   get '/' do
     "Testing infrastructure"
+  end
+
+  delete '/bookmarks/:id' do
+  Bookmark.delete(id: params[:id])
+  redirect '/bookmarks'
   end
 
   get '/bookmarks' do
