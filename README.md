@@ -23,6 +23,15 @@ So I can remove my bookmark from Bookmark Manager
 I want to delete a bookmark
 
 -----------------------------------------------------
+
+As a user 
+
+So I can change an existing bookmark
+
+I want to update a bookmark
+
+-----------------------------------------------------
+
 [Bookmark Manager domain model](./bookmark_manager_1.png)
 
 ## CREATE PRODUCTION DATABASE
